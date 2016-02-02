@@ -1,0 +1,10 @@
+<launch>
+    <include file="$(find openni_launch)/launch/openni.launch"/>
+    <node  pkg="openni_tracker" type="openni_tracker" name="tracker_1">
+     
+    </node>
+    
+      <node  pkg="kinect_tracker" type="kinect_tracker" name="tracker_2" output="screen" >
+    </node>
+
+</launch>
